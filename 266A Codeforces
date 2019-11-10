@@ -1,0 +1,17 @@
+// 266A Codeforces simplified
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    int c=0;
+    cin>>n;
+    string j;
+    cin>>j;
+    for(int i=1; i<n;i++){
+        if(j[i-1]==j[i]){
+            c++;
+        }
+    }
+    cout<<c;
+    return 0;
+}
