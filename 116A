@@ -1,0 +1,21 @@
+// 116A Codeforces simplified
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    int k=0;
+    cin>>n;
+    int a, b=0;
+    int c=0;
+    for(int i=0;i<n;i++){
+        cin>>a;
+        cin>>b;
+        c+=b-a;
+        k=max(c, k);
+        //k=max(c+=b-a, b-a);
+        //cout<<c;
+        //cout<<" ";
+    }
+    cout<<k;
+    return 0;
+}
